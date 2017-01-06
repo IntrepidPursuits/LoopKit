@@ -18,7 +18,7 @@ private let ContinuousGlucoseInterval = TimeInterval(minutes: 5)
 private let CalculationUnit = HKUnit.milligramsPerDeciliterUnit()
 
 
-struct GlucoseMath {
+public struct GlucoseMath {
     /**
      Calculates slope and intercept using linear regression
      
@@ -89,7 +89,7 @@ struct GlucoseMath {
 
      - returns: An array of glucose effects
      */
-    static func linearMomentumEffectForGlucoseEntries<T: BidirectionalCollection>(
+    public static func linearMomentumEffectForGlucoseEntries<T: BidirectionalCollection>(
         _ samples: T,
         duration: TimeInterval = TimeInterval(minutes: 30),
         delta: TimeInterval = TimeInterval(minutes: 5)

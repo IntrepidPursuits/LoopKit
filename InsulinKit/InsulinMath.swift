@@ -11,7 +11,7 @@ import HealthKit
 import LoopKit
 
 
-struct InsulinMath {
+public struct InsulinMath {
 
     /**
      Returns the percentage of total insulin effect remaining at a specified interval after delivery; also known as Insulin On Board (IOB).
@@ -460,7 +460,7 @@ struct InsulinMath {
 
      - returns: A sequence of glucose effects
      */
-    static func glucoseEffectsForDoses<T: Collection>(
+    public static func glucoseEffectsForDoses<T: Collection>(
         _ doses: T,
         actionDuration: TimeInterval,
         insulinSensitivity: InsulinSensitivitySchedule,

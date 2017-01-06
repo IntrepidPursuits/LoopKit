@@ -17,7 +17,7 @@ public struct CarbValue: SampleValue {
 }
 
 
-struct CarbMath {
+public struct CarbMath {
     /**
      Returns the percentage of total carbohydrates absorbed as blood glucose at a specified interval after eating.
 
@@ -130,7 +130,7 @@ struct CarbMath {
         return values
     }
 
-    static func glucoseEffectsForCarbEntries<T: Collection>(
+    public static func glucoseEffectsForCarbEntries<T: Collection>(
         _ entries: T,
         fromDate: Date? = nil,
         toDate: Date? = nil,
