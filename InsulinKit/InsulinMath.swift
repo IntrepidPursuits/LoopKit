@@ -421,7 +421,7 @@ public struct InsulinMath {
 
      - returns: A sequence of insulin amount remaining
      */
-    static func insulinOnBoardForDoses<T: Collection>(
+    public static func insulinOnBoardForDoses<T: Collection>(
         _ doses: T,
         actionDuration: TimeInterval,
         fromDate: Date? = nil,
